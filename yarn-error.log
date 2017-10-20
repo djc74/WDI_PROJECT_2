@@ -1,0 +1,69 @@
+Arguments: 
+  /Users/David/.nvm/versions/node/v8.4.0/bin/node /usr/local/Cellar/yarn/1.1.0/libexec/bin/yarn.js
+
+PATH: 
+  /Users/David/.rbenv/shims:/Users/David/.rbenv/shims:/Users/David/.nvm/versions/node/v8.4.0/bin:/Users/David/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+Yarn version: 
+  1.1.0
+
+Node version: 
+  8.4.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "WDI_PROJECT_2",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:djc74/WDI_PROJECT_2.git",
+    "author": "djc74 <davidcooper974@gmail.com>",
+    "license": "MIT"
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bluebird": "^3.5.0",
+      "body-parser": "^1.14.2",
+      "browser-sync": "^2.18.8",
+      "ejs": "^2.5.6",
+      "express": "^4.15.2",
+      "express-ejs-layouts": "^2.3.0",
+      "express-flash": "0.0.2",
+      "express-session": "^1.15.6",
+      "method-override": "^2.3.10",
+      "mongoose": "^4.9.4",
+      "morgan": "^1.8.1"
+    },
+    "devDependencies": {
+      "babel-preset-env": "^1.6.1",
+      "browser-sync": "^2.18.8",
+      "gulp": "^3.9.1",
+      "gulp-babel": "^6.1.2",
+      "gulp-clean-css": "^3.0.4",
+      "gulp-nodemon": "^2.2.1",
+      "gulp-plumber": "^1.1.0",
+      "gulp-sass": "^3.1.0",
+      "gulp-uglify": "^2.1.2",
+      "nodemon": "^1.11.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/David/Development/WDI_PROJECT_2/package.json: Unexpected string in JSON at position 200
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.1.0/libexec/lib/cli.js:764:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.1.0/libexec/lib/cli.js:92:30)
+      at /usr/local/Cellar/yarn/1.1.0/libexec/lib/cli.js:103:13
+      at <anonymous>
