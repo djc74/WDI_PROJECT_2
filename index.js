@@ -2,11 +2,12 @@
 const express = require('express');
 const morgan = require('morgan');
 const routes = require('./config/routes');
-const port = process.env.PORT || 3000;
+const { port, dbURI } = require('./config/environment');
 const expressLayouts = require('express-ejs-layouts');
-
+const mongoose = require('mongoose');
 
 const app = express();
+mongoose.connect(dbURI, { useMongoClient: true });
 
 //settings
 app.set('view engine', 'ejs');
