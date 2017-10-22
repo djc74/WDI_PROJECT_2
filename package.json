@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:djc74/WDI_PROJECT_2.git",
-  "author": "djc74 <davidcooper974@gmail.com>",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.0",
     "body-parser": "^1.14.2",
