@@ -5,6 +5,7 @@ const routes = require('./config/routes');
 const { port, dbURI } = require('./config/environment');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
 const app = express();
 mongoose.connect(dbURI, { useMongoClient: true });
@@ -17,6 +18,8 @@ app.set('views', `${__dirname}/views`);
 app.use(expressLayouts);
 app.use(morgan('dev'));
 app.use(express.static(`${__dirname}/public`));
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 app.use(routes);
 //listen to PORT
