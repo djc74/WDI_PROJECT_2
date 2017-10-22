@@ -6,7 +6,7 @@ mongoose.connect(dbUri, { useMongoClient: true });
 
 // Require the model
 const User = require('../models/user');
-
+const Dragon = require('../models/dragons');
 // Drop the model
 User.collection.drop();
 
@@ -20,6 +20,16 @@ User
     password: 'password',
     passwordConfirmation: 'password'
   }])
-  .then(users => console.log(`${users.length} users were created!`))
-  .catch(err => console.log(err))
+  .then((users) => {
+    console.log(`${users.length} users were created!`);
+    return Dragon
+      .create([{
+        name: 'Monstrous Nightmare',
+        colour: 'black',
+        size: 'small',
+        createdBy: 'David'
+      }]);
+  })
+  .then((dragons) => console.log(`${dragons.length} hotels created`))
+  .catch((err) => console.log(err))
   .finally(() => mongoose.connection.close());

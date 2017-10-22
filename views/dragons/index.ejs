@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+  </head>
+  <body>
+    <h1>Index</h1>
+    <ul>
+  <% dragons.forEach((dragon) => { %>
+    <li>
+      <h3><%= dragon.title %></h3>
+      <h4><%= dragon.author %></h4>
+      <p><%= dragon.description %></p>
+    </li>
+  <% }); %>
+</ul>
+  </body>
+</html>

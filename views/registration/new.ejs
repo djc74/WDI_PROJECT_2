@@ -1,19 +1,20 @@
-<h1>New</h1>
-<form method="POST" action="/dragons">
+<form method="POST" action="/register">
   <div>
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name">
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username">
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+  </div>
+  <div>
+    <label for="passwordConfirmation">Password Confirmation</label>
+    <input type="password" name="passwordConfirmation" id="passwordConfirmation">
   </div>
 
-  <div>
-    <label for="colour">Colour</label>
-    <input type="text" name="colour" id="colour">
-  </div>
-
-  <div>
-    <label for="size">Size</label>
-    <input type="size" name="size" id="size">
-  </div>
-
-  <button>Create</button>
+  <button>Register</button>
 </form>
