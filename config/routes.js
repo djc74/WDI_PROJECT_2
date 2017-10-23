@@ -3,11 +3,11 @@ const router  = express.Router();
 const statics = require('../controllers/statics');
 const sessionsController = require('../controllers/sessions');
 const registrationsController = require('../controllers/registrations');
-const secureRoute = require('../lib/secureRoute');
 const dragonsController = require('../controllers/dragons');
+const secureRoute = require('../lib/secureRoute');
 
 
-// HOME
+
 router.route('/')
   .get(statics.home);
 

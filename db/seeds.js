@@ -15,8 +15,8 @@ User
   .create([{
     firstName: 'David',
     lastName: 'Cooper',
-    username: 'david',
     email: 'david@david.com',
+    username: 'david',
     password: 'password',
     passwordConfirmation: 'password'
   }])
@@ -27,9 +27,10 @@ User
         name: 'Monstrous Nightmare',
         colour: 'black',
         size: 'small',
-        createdBy: 'David'
+        createdBy: users[0],
+        comment: 'Very scary'
       }]);
   })
-  .then((dragons) => console.log(`${dragons.length} hotels created`))
+  .then((dragons) => console.log(`${dragons.length} dragons created`))
   .catch((err) => console.log(err))
   .finally(() => mongoose.connection.close());

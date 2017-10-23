@@ -9,9 +9,10 @@
     <ul>
   <% dragons.forEach((dragon) => { %>
     <li>
-      <h3><%= dragon.title %></h3>
-      <h4><%= dragon.author %></h4>
-      <p><%= dragon.description %></p>
+      <h3><%= dragon.name %></h3>
+      <h4><%= dragon.colour %></h4>
+      <p><%= dragon.size %></p>
+      <p><%= dragon.createdBy %></p>
     </li>
   <% }); %>
 </ul>
