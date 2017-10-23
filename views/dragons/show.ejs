@@ -1,7 +1,8 @@
 <div class="large-12 columns">
-  <img src="<%= hotel.image %>" alt="<%= hotel.name %>">
+  <img src="<%= dragon.image %>" alt="<%= dragon.name %>">
   <h2><%= dragon.name %></h2>
-  <% if(locals.isAuthenticated && dragon.belongsTo(user)) { %>
+
+  <% if (locals.isAuthenticated && dragon.belongsTo(user)) { %>
     <a href="/dragons/<%= dragon.id %>/edit" class="button">Edit</a>
 
     <form method="POST" action="/dragons/<%= dragon.id %>">
@@ -11,11 +12,10 @@
   <% } %>
 
   <p>
-    <%= dragon.name<br>
+    <%= dragon.name %><br>
     <%= dragon.colour %><br>
     <%= dragon.size %>
   </p>
-
 
   <small>Added by: <%= dragon.createdBy.username %></small>
 
@@ -27,7 +27,7 @@
     <% }) %>
   </section>
 
-  <% if(locals.isAuthenticated) { %>
+  <% if(user.isAuthenticated) { %>
     <section>
       <h4>Leave a comment</h4>
       <form method="POST" action="/dragons/<%= dragon.id %>/comments">
@@ -35,5 +35,5 @@
         <button class="button">Leave a comment</button>
       </form>
     </section>
-  <% } %>
+   <% } %>
 </div>

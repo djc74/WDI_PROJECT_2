@@ -1,4 +1,4 @@
-const Dragon = require('../models/dragons');
+const Dragon = require('../models/dragon');
 
 function indexRoute(req, res, next) {
   Dragon

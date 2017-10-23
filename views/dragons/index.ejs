@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Index</title>
-  </head>
-  <body>
-    <h1>Index</h1>
-    <ul>
+
+<h1>Index</h1>
+<ul>
   <% dragons.forEach((dragon) => { %>
     <li>
-      <h3><%= dragon.name %></h3>
-      <h4><%= dragon.colour %></h4>
-      <p><%= dragon.size %></p>
-      <p><%= dragon.createdBy %></p>
+    <h3><a href="/dragons/<%= dragon.id %>"><%= dragon.name %></a></h3>
+    <h4><%= dragon.colour %></h4>
+    <p><%= dragon.size %></p>
+    <p><%= dragon.createdBy %></p>
     </li>
-  <% }); %>
+    <% }); %>
 </ul>
-  </body>
-</html>

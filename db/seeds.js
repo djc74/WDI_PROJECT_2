@@ -7,8 +7,10 @@ mongoose.connect(dbUri, { useMongoClient: true });
 // Require the model
 const User = require('../models/user');
 const Dragon = require('../models/dragons');
+
 // Drop the model
 User.collection.drop();
+Dragon.collection.drop();
 
 // create models
 User
@@ -24,6 +26,7 @@ User
     console.log(`${users.length} users were created!`);
     return Dragon
       .create([{
+        image: 'https://i.imgur.com/aWvACrkb.jpg',
         name: 'Monstrous Nightmare',
         colour: 'black',
         size: 'small',

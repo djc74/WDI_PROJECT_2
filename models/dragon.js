@@ -6,15 +6,15 @@ const commentSchema = new mongoose.Schema({
 });
 
 commentSchema.methods.belongsTo = function commentBelongsTo(user) {
-  if(typeof this.createdBy.id === 'string') return this.createdBy.id === user.id;
+  if (typeof this.createdBy.id === 'string') return this.createdBy.id === user.id;
   return user.id === this.createdBy.toString();
 };
 
 const dragonSchema = new mongoose.Schema({
+  image: String,
   name: { type: String, required: true },
   colour: { type: String, required: true },
   size: { type: String, required: true },
-  image: String,
   createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   comments: [commentSchema]
 });
