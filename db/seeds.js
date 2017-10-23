@@ -6,7 +6,7 @@ mongoose.connect(dbUri, { useMongoClient: true });
 
 // Require the model
 const User = require('../models/user');
-const Dragon = require('../models/dragons');
+const Dragon = require('../models/dragon');
 
 // Drop the model
 User.collection.drop();
