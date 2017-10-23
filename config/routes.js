@@ -6,8 +6,6 @@ const registrationsController = require('../controllers/registrations');
 const dragonsController = require('../controllers/dragons');
 const secureRoute = require('../lib/secureRoute');
 
-
-
 router.route('/')
   .get(statics.home);
 

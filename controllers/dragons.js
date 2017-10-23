@@ -38,6 +38,7 @@ function showRoute(req, res, next) {
 }
 
 function editRoute(req, res, next) {
+  console.log('HIIII')
   Dragon
     .findById(req.params.id)
     .exec()
