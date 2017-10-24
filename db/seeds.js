@@ -31,7 +31,7 @@ User
         colour: 'black',
         size: 'small',
         createdBy: users[0],
-        comment: 'Very scary'
+        comments: [{ content: 'this is scary', createdBy: users[0]}]
       }]);
   })
   .then((dragons) => console.log(`${dragons.length} dragons created`))

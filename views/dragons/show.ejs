@@ -1,7 +1,6 @@
 <div class="large-12 columns">
   <img src="<%= dragon.image %>" alt="<%= dragon.name %>">
   <h2><%= dragon.name %></h2>
-
   <p>
     <%= dragon.colour %><br>
     <%= dragon.size %>
@@ -17,7 +16,7 @@
     <% }) %>
   </section>
 
-  <% if(user.isAuthenticated) { %>
+  <% if(locals.isAuthenticated) { %>
     <section>
       <h4>Leave a comment</h4>
       <form method="POST" action="/dragons/<%= dragon.id %>/comments">

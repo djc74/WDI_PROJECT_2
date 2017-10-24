@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Edit</title>
-  </head>
-  <body>
+
     <h1>Edit</h1>
+<form method="POST" action="/dragons/<%= dragon.id %>/edit">
+  <input type="hidden" name="_method" value="PUT">
+
+<div class="row">
+  <div class="col-md-6">
+    <label for="image">Picture</label>
+    <input type="text" name="image" id="image" value="<%= dragon.image %>">
+  </div>
+
+  <div class="col-md-6">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"value="<%= dragon.name %>">
+  </div>
+
+  <div class="col-md-6">
+    <label for="colour">Colour</label>
+    <input type="text" name="colour" id="colour" value="<%= dragon.colour %>">
+  </div>
+  <div class="col-md-6">
+    <label for="size">Size</label>
+    <input type="text" name="size" id="size" value="<%= dragon.size %>">
+  </div>
+
+  <button>Save monster!</button>
+</form>
   </body>
 </html>
