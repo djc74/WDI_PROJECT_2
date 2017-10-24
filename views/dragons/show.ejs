@@ -1,35 +1,45 @@
-<div class="large-12 columns">
-  <img src="<%= dragon.image %>" alt="<%= dragon.name %>">
-  <h2><%= dragon.name %></h2>
-  <p>
-    <%= dragon.colour %><br>
-    <%= dragon.size %>
-  </p>
+<main class="container" id="showcontainer">
 
-  <small>Added by: <%= dragon.createdBy.username %></small>
+  <div class="row">
+    <div class="col-lg-6">
 
-  <section>
-    <h4>Comments</h4>
-    <% dragon.comments.forEach((comment) => { %>
-      <p><%= comment.content %></p>
-      <small><%= comment.createdBy.username %></small>
-    <% }) %>
-  </section>
+      <img class ="showdragon" src="<%= dragon.image %>" alt="<%= dragon.name %>">
+    </div>
+    <div class="col-lg-6">
 
-  <% if(locals.isAuthenticated) { %>
-    <section>
-      <h4>Leave a comment</h4>
-      <form method="POST" action="/dragons/<%= dragon.id %>/comments">
-        <textarea name="content" id="content" placeholder="Comment" required maxlength="255"></textarea>
-        <button class="button">Leave a comment</button>
-      </form>
-    </section>
-   <% } %>
-</div>
-<% if (locals.isAuthenticated && dragon.belongsTo(user)) { %>
-  <a href="/dragons/<%= dragon.id %>/edit" class="button">Edit</a>
-  <form method="POST" action="/dragons/<%= dragon.id %>">
-    <input type="hidden" name="_method" value="DELETE">
-    <button class="button alert">Delete</button>
-  </form>
-<% } %>
+      <h2><%= dragon.name %></h2>
+      <p>
+        <%= dragon.colour %><br>
+        <%= dragon.size %>
+      </p>
+
+      <small>Added by: <%= dragon.createdBy.username %></small>
+
+      <section>
+        <h4>Comments</h4>
+        <% dragon.comments.forEach((comment) => { %>
+          <p><%= comment.content %></p>
+          <small><%= comment.createdBy.username %></small>
+          <% }) %>
+        </section>
+
+        <% if(locals.isAuthenticated) { %>
+          <section>
+          <h4>Leave a comment</h4>
+          <form method="POST" action="/dragons/<%= dragon.id %>/comments">
+          <textarea name="content" id="content" placeholder="Comment" required maxlength="255"></textarea>
+          <button class="button">Leave a comment</button>
+          </form>
+          </section>
+          <% } %>
+
+          <% if (locals.isAuthenticated && dragon.belongsTo(user)) { %>
+            <a href="/dragons/<%= dragon.id %>/edit" class="button" id="showedit">Edit</a>
+            <form method="POST" action="/dragons/<%= dragon.id %>">
+            <input type="hidden" name="_method" value="DELETE">
+            <button class="button" id="showdelete">Delete</button>
+            </form>
+            <% } %>
+          </div>
+        </div>
+      </main>

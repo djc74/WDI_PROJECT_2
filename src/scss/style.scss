@@ -25,14 +25,39 @@ h2 {
 }
 
 .container, .navlink {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
   }
 
 .navlink, .navtitle {
   font-size: 20px;
 }
 
+#indexcontainer {
+  margin-top: 20px;
+}
+
 .indexdragon {
   border: 1px solid black;
   padding: 5%;
+}
+
+.indexname {
+  margin-top: 10px;
+}
+
+.showdragon {
+  width: 90%;
+}
+
+#showcontainer {
+  margin-top: 20px;
+  padding: 2%;
+}
+
+#showedit {
+  float:left;
+}
+
+#showdelete {
+  float:right;
 }
