@@ -1,3 +1,32 @@
+
+.picturesmall {
+  height: 300px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.title, .navtitle {
+  font-family: 'Pacifico', cursive;
+}
+
+.row {
+  margin: 100px auto;
+}
+
 h1 {
-  color: red;
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.container, .navlink {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+.navlink, .navtitle {
+  font-size: 20px;
 }

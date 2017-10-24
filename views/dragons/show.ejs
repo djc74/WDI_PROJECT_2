@@ -28,7 +28,6 @@
 </div>
 <% if (locals.isAuthenticated && dragon.belongsTo(user)) { %>
   <a href="/dragons/<%= dragon.id %>/edit" class="button">Edit</a>
-
   <form method="POST" action="/dragons/<%= dragon.id %>">
     <input type="hidden" name="_method" value="DELETE">
     <button class="button alert">Delete</button>

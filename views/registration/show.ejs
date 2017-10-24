@@ -1,7 +1,8 @@
-<h1><%= user.username %></h1>
-<h4><%= user.firstName %></h4>
-<h4><%= user.lastName %></h4>
-<p><%= user.email %></p>
+<main class="container">
+<h1>Username: <%= user.username %></h1>
+<h4>First name: <%= user.firstName %></h4>
+<h4>Surname: <%= user.lastName %></h4>
+<p>Email: <%= user.email %></p>
 
 <a href="/profile/edit" class="button">Edit</a>
 
@@ -9,3 +10,4 @@
   <input type="hidden" name="_method" value="DELETE">
   <button class="button alert">Delete</button>
 </form>
+</main>

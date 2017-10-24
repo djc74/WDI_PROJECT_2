@@ -1,34 +1,20 @@
 <div class="top-bar">
   <div class="top-bar-left">
     <ul class="dropdown menu" data-dropdown-menu>
-      <li><a href="/">Monstergram</a></li>
-      <li><a href="/dragons">Monsters</a></li>
-      <li><a href="/dragons/new">Add new monster</a></li>
+      <li class="navtitle"><a href="/">Monstergram</a></li>
+      <li class="navlink"><a href="/dragons">Monsters</a></li>
+      <li class="navlink"><a href="/dragons/new">Add new monster</a></li>
     </ul>
   </div>
   <div class="top-bar-right">
     <ul class="dropdown menu" data-dropdown-menu>
       <% if(!locals.isAuthenticated) { %>
-        <li><a href="/register">Register</a></li>
-        <li><a href="/login">Login</a></li>
+        <li class="navlink"><a href="/register">Register</a></li>
+        <li class="navlink"><a href="/login">Login</a></li>
       <% } else { %>
-        <li><a href="/profile">User: <%= user.username %></a></li>
-        <li><a href="/logout">Logout</a></li>
+        <li class="navlink"><a href="/profile">User: <%= user.username %></a></li>
+        <li class="navlink"><a href="/logout">Logout</a></li>
       <% } %>
     </ul>
   </div>
 </div>
-<%#
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Monstergram</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
-    </div>
-  </div>
-</nav>%>
