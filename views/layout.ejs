@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Directory of dragons</title>
-    <% include ./partials/_stylesheets.ejs %>
-    <% include ./partials/_scripts.ejs %>
-
-  </head>
-  <body>
-    <% include ./partials/_navbar %>
-    <% for(const type in messages) { %>
-      <div class="callout <%= type %>">
-        <h5><%= messages[type] %></h5>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>Monstergram</title>
+  <% include ./partials/_stylesheets.ejs %>
+  <% include ./partials/_scripts.ejs %>
+</head>
+<body>
+  <% include ./partials/_navbar %>
+  <% for(const type in messages) { %>
+    <div class="callout <%= type %>">
+    <h5><%= messages[type] %></h5>
+    </div>
     <% } %>
-      <%- body %>
-
+    <%- body %>
   </body>
-</html>
+  </html>

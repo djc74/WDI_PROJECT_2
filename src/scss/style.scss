@@ -12,8 +12,13 @@ ul {
 }
 
 .home {
-  margin: 150px auto;
-  text-align: center;
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); 
+  // margin: 150px auto;
+  // text-align: center;
 }
 
 h1 {
@@ -60,4 +65,11 @@ h2 {
 
 #showdelete {
   float:right;
+}
+
+#sessionnew {
+  margin-top: 10px;
+  label {
+    font-size: 20px
+  }
 }
