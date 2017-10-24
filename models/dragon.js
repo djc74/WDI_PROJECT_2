@@ -13,8 +13,7 @@ commentSchema.methods.belongsTo = function commentBelongsTo(user) {
 const dragonSchema = new mongoose.Schema({
   image: String,
   name: { type: String, required: true },
-  colour: { type: String, required: true },
-  size: { type: String, required: true },
+  description: { type: String, required: true },
   createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   comments: [commentSchema]
 });

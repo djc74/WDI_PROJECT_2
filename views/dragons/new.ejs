@@ -1,48 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>New monster</title>
-  </head>
-  <body>
-    <main class="container">
-    <h2>New</h2>
-<form method="POST" action="/dragons">
-<div class="row">
-  <div class="col-md-6">
-    <label for="image">Picture</label>
-    <input type="text" name="image" id="image">
-  </div>
-
-  <div class="col-md-6">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name">
-  </div>
-
-  <div class="col-md-6">
-    <label for="colour">Colour</label>
-    <input type="text" name="colour" id="colour">
-  </div>
-  <div class="col-md-6">
-    <label for="size">Size</label>
-    <input type="text" name="size" id="size">
-  </div>
-
-  <button>Add monster!</button>
-</form>
-</main>
-
+<head>
+  <meta charset="utf-8">
+  <title>New monster</title>
+</head>
+<body>
+  <main class="container">
+    <h2>Enter your new monster</h2>
+    <form method="POST" action="/dragons">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="col-md-6">
+          <label for="image">Picture</label>
+          <input type="text" name="image" id="image">
+        </div>
+        <div class="col-md-12">
+          <label for="description">Description</label>
+          <input type="text" name="description" id="description">
+        </div>
+        <button>Add monster!</button>
+      </form>
+    </main>
   </body>
-</html>
-
-
-<%# <form>
-  <div class="row">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="First name">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Last name">
-    </div>
-  </div>
-</form>%>
+  </html>
