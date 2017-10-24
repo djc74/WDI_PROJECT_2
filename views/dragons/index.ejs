@@ -8,10 +8,12 @@
 
     <% dragons.forEach((dragon) => { %>
       <li class="col-md-6 col-lg-4">
+        <div class="indexdragon">
         <img class="picturesmall" src="<%= dragon.image %>" alt="Waiting for image">
         <h3><a href="/dragons/<%= dragon.id %>"><%= dragon.name %></a></h3>
         <h4>Colour: <%= dragon.colour %></h4>
         <p>Size: <%= dragon.size %></p>
+        </div>
       </li>
       <% }); %>
   </ul>

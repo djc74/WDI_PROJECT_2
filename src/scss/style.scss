@@ -11,8 +11,9 @@ ul {
   font-family: 'Pacifico', cursive;
 }
 
-.row {
-  margin: 100px auto;
+.home {
+  margin: 150px auto;
+  text-align: center;
 }
 
 h1 {
@@ -29,4 +30,9 @@ h2 {
 
 .navlink, .navtitle {
   font-size: 20px;
+}
+
+.indexdragon {
+  border: 1px solid black;
+  padding: 5%;
 }
