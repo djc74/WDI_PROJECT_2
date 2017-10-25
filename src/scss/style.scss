@@ -3,10 +3,6 @@
 @import: 'index';
 $backgroundblue: rgba(227,242,253,0.5);
 
-.title {
-  font-family: 'Pacifico', cursive;
-}
-
 .picturesmall {
   height: 300px;
 }
@@ -16,16 +12,15 @@ ul {
 }
 
 .home {
+  font-family: 'Pacifico', cursive;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-}
-
-h1 {
-  font-size: 100px;
-  font-family: 'Pacifico', cursive;
+  h1 {
+    font-size: 100px;
+  }
 }
 
 h2 {
