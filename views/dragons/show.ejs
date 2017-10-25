@@ -1,21 +1,18 @@
 <main class="container" id="showcontainer">
-
   <div class="row">
     <div class="col-lg-6">
-
       <img class ="showdragon" src="<%= dragon.image %>" alt="<%= dragon.name %>">
     </div>
+
     <div class="col-lg-6">
-
       <h2><%= dragon.name %></h2>
-      <p>Description: <%= dragon.description %></p>
-
-      <small>Added by: <%= dragon.createdBy.username %></small>
+      <p>DESCRIPTION: <%= dragon.description %></p>
+      <small class="showadded">Added by: <%= dragon.createdBy.username %></small>
 
       <section>
         <h4>Comments</h4>
         <% dragon.comments.forEach((comment) => { %>
-          <p><%= comment.content %></p>
+          <textarea name="content" id="content" required maxlength="255"><%= comment.content %></textarea>
           <small><%= comment.createdBy.username %></small>
           <% }) %>
         </section>

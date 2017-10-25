@@ -1,29 +1,21 @@
-
-    <h2>Edit</h2>
-<form method="POST" action="/dragons/<%= dragon.id %>/edit">
-  <input type="hidden" name="_method" value="PUT">
-
-<div class="row">
-  <div class="col-md-6">
-    <label for="image">Picture</label>
-    <input type="text" name="image" id="image" value="<%= dragon.image %>">
-  </div>
-
-  <div class="col-md-6">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name"value="<%= dragon.name %>">
-  </div>
-
-  <div class="col-md-6">
-    <label for="colour">Colour</label>
-    <input type="text" name="colour" id="colour" value="<%= dragon.colour %>">
-  </div>
-  <div class="col-md-6">
-    <label for="size">Size</label>
-    <input type="text" name="size" id="size" value="<%= dragon.size %>">
-  </div>
-
-  <button>Save monster!</button>
-</form>
-  </body>
-</html>
+<main class="container">
+  <h2>Edit</h2>
+  <form method="POST" action="/dragons/<%= dragon.id %>">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="row">
+      <div class="col-md-6">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="col-md-6">
+        <label for="image">Picture</label>
+        <input type="text" name="image" id="image">
+      </div>
+      <div class="col-md-12">
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description">
+        <button class="button">Save monster!</button>
+      </div>
+    </div>
+  </form>
+</main>

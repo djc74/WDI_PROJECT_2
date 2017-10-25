@@ -40,6 +40,7 @@ function showRoute(req, res, next) {
 function editRoute(req, res, next) {
   Dragon
     .findById(req.params.id)
+    // .populate('name dragon.name')
     .exec()
     .then(dragon => {
       if(!dragon) return res.redirect();

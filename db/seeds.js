@@ -28,7 +28,7 @@ User
       .create([{
         image: 'https://i.imgur.com/aWvACrkb.jpg',
         name: 'Monstrous Nightmare',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        description: 'The only way to describe the monster was a bipedal complete absence of light. It wasn\'t just blackness, it was nothing at all. He cast no shadow, made no noise and gave off no odour. But if he targeted you he would seize you by the neck and jump into the air so that he could not be followed. The rest of what we know is guess work from the remains of his victims. He seems to eat them like a delicacy. The bones appear to be gnawed with small razor sharp teeth and they are left lined up in order of size, very neatly.',
         createdBy: users[0],
         comments: [{ content: 'this is scary', createdBy: users[0]}]
       }]);

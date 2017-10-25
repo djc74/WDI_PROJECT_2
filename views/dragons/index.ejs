@@ -1,22 +1,16 @@
 
 
 <main class="container" id="indexcontainer">
-
-  <h2>Monsters</h2>
-
+  <h2 class="showhead">Monsters</h2>
   <ul class="row">
-
     <% dragons.forEach((dragon) => { %>
       <li class="col-md-6 col-lg-4">
-        <div class="indexdragon">
-        <img class="picturesmall" src="<%= dragon.image %>" alt="Waiting for image">
-        <h3 class="indexname"><a href="/dragons/<%= dragon.id %>"><%= dragon.name %></a></h3>
-        <p>Description: <%= dragon.description %></p>
-        </div>
+      <div class="indexdragon">
+      <img class="picturesmall" src="<%= dragon.image %>" alt="Waiting for image">
+      <h3 class="indexname"><a href="/dragons/<%= dragon.id %>"><%= dragon.name %></a></h3>
+      <p>DESCRIPTION: <%= dragon.description %></p>
+      </div>
       </li>
-      <% }); %>
+    <% }); %>
   </ul>
-
-
-
 </main>

@@ -1,3 +1,11 @@
+@import: 'show';
+@import: 'nav';
+@import: 'index';
+$backgroundblue: rgba(227,242,253,0.5);
+
+.title {
+  font-family: 'Pacifico', cursive;
+}
 
 .picturesmall {
   height: 300px;
@@ -7,64 +15,21 @@ ul {
   list-style-type: none;
 }
 
-.title, .navtitle {
-  font-family: 'Pacifico', cursive;
-}
-
 .home {
   position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-  // margin: 150px auto;
-  // text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
   font-size: 100px;
+  font-family: 'Pacifico', cursive;
 }
 
 h2 {
   font-size: 40px;
-}
-
-.container, .nav-link {
-    font-family: 'Rajdhani', sans-serif;
-  }
-
-.nav-link, .navtitle {
-  font-size: 20px;
-}
-
-#indexcontainer {
-  margin-top: 20px;
-}
-
-.indexdragon {
-  border: 1px solid black;
-  padding: 5%;
-}
-
-.indexname {
-  margin-top: 10px;
-}
-
-.showdragon {
-  width: 90%;
-}
-
-#showcontainer {
-  margin-top: 20px;
-  padding: 2%;
-}
-
-#showedit {
-  float:left;
-}
-
-#showdelete {
-  float:right;
 }
 
 #sessionnew {
@@ -72,4 +37,9 @@ h2 {
   label {
     font-size: 20px
   }
+}
+
+.error {
+  margin: 0 auto;
+  width: 90%;
 }

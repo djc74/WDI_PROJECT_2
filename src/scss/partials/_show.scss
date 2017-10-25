@@ -1,0 +1,22 @@
+.showdragon {
+  width: 100%;
+}
+
+#showcontainer {
+  margin-top: 20px;
+  padding: 2%;
+  border: 1px solid black;
+  background-color: $backgroundblue;
+}
+
+.showadded {
+  margin-bottom: 20px;
+}
+
+#showedit #useredit {
+  float:left;
+}
+
+#showdelete #userdelete {
+  float:right;
+}
